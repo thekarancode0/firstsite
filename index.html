@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            background-color: #2A5C6E;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+         #text {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 195px;
+            font-family: sans-serif;
+            color: white;
+            text-shadow: 0 -20px 90px, 0 0 2px, 0 0 1em #eb7e17, 0 0 0.2em #eb7e17, 0 0 0.1em #eb7e17, 0 10px 3px #000;
+        
+        }
+
+        #img{
+            width: 50%;
+            height: 100%;
+        }
+        img{
+            width: 500px;
+            margin-bottom: 50px;
+            image-resolution: 1080px;
+
+        }
+        #text b span{
+  animation: blink linear infinite 2s;
+}
+#text b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+#text b span:nth-of-type(3){
+  animation: blink linear infinite 4s;
+}
+
+        @keyframes blink {
+        78% {
+            color: inherit;
+            text-shadow: inherit;
+        }
+        79%{
+            color: #333;
+        }
+
+        80% {
+            
+            text-shadow: none;
+        }
+        81% {
+            color: inherit;
+            text-shadow: inherit;
+        }
+        82% {
+            color: #333;
+            text-shadow: none;
+        }
+        83% {
+            color: inherit;
+            text-shadow: inherit;
+        }
+        92% {
+            color: #333;
+            text-shadow: none;
+        }
+        92.5% {
+            color: inherit;
+            text-shadow: inherit;
+        }
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="text"><b><span>K</span>AY<span>A</span>N<span>K</span></b></div>
+        <div id="pic"><img src="five-removebg-preview.png" alt=""></div>
+    </div>
+</body>
+</html>
