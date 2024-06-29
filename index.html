@@ -5,36 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #main{
-            background-color: #2A5C6E;
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
+        *{
+            margin: 0;
+            padding: 0;
         }
-         #text {
-            width: 50%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            font-size: 195px;
-            font-family: sans-serif;
-            color: white;
-            text-shadow: 0 -20px 90px, 0 0 2px, 0 0 1em #eb7e17, 0 0 0.2em #eb7e17, 0 0 0.1em #eb7e17, 0 10px 3px #000;
-        
+        #main
+        {
+            width:100vw;
+            height:100vh;
+            background-color:#2A5C6E;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction: column;
+        }
+        #text
+        {
+            font-family:san-sarif;
+            font-size:90px;
+            color:white;
+            display:flex;
+            align-items:center;
+            text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
         }
 
-        #img{
-            width: 50%;
-            height: 100%;
+        #img
+        {
+            display:flex;
+            align-items:center;
         }
-        img{
-            width: 500px;
-            margin-bottom: 50px;
-            image-resolution: 1080px;
 
+        #img img
+        {
+            width:200px;
+            height:200px;
+            
         }
+
+
+
         #text b span{
   animation: blink linear infinite 2s;
 }
@@ -43,6 +52,12 @@
 }
 #text b span:nth-of-type(3){
   animation: blink linear infinite 4s;
+}
+#text b span:nth-of-type(4){
+  animation: blink linear infinite 5s;
+}
+#text b span:nth-of-type(5){
+  animation: blink linear infinite 6s;
 }
 
         @keyframes blink {
@@ -79,14 +94,13 @@
             text-shadow: inherit;
         }
         }
-
-    
     </style>
 </head>
 <body>
-    <div id="main">
-        <div id="text"><b><span>K</span>AY<span>A</span>N<span>K</span></b></div>
-        <div id="pic"><img src="five-removebg-preview.png" alt=""></div>
-    </div>
+<div id="main">
+	<div id="text"> 	<b><span>L</span>e<span>a</span><span>r</span>n<span>i</span>n<span>g</span></b>
+	</div>
+	<div id="img" > <img src="png.png"> </div>
+</div>
 </body>
 </html>
